@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-
 def multiple_returns(sentence):
-    length = len(sentence)
-    if length == 0:
-        result = (0, None)
-        return result
+    if len(sentence) == 0:
+        max = [0, None]
+        return max
     else:
-    res = (length, sentence[0:1])
-    return res
+        max = [len(sentence), sentence[0]]
+        return max
